@@ -6,12 +6,14 @@ using UnityEngine.AI;
 public class PlayerAnimation : MonoBehaviour
 {
     private NavMeshAgent playerAgent;
+    private PlayerController playerCont;
     private Animator anim;
 
     // Start is called before the first frame update
     void Awake()
     {
         playerAgent = GetComponent<NavMeshAgent>();
+        playerCont = GetComponent<PlayerController>();
         anim = GetComponent<Animator>();
     }
 
@@ -19,5 +21,6 @@ public class PlayerAnimation : MonoBehaviour
     void Update()
     {
         anim.SetFloat("Speed", playerAgent.velocity.magnitude);
+        anim.SetBool("IsShooting", playerCont.isShooting);
     }
 }

@@ -1049,7 +1049,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAgent: {fileID: 1493167213}
   debugTransform: {fileID: 938652792}
-  clickableMask:
+  isShooting: 0
+  walkableMask:
+    serializedVersion: 2
+    m_Bits: 55
+  shootableMask:
     serializedVersion: 2
     m_Bits: 55
 --- !u!1 &1558731624

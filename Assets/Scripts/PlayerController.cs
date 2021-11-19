@@ -10,10 +10,14 @@ public class PlayerController : MonoBehaviour
     public Transform debugTransform;
     private Camera mainCam;
 
-    private Vector3 targetPos;
+    private Vector3 walkPos;
+    private Vector3 shootPos;
 
-    public LayerMask clickableMask;
-    
+    public bool isShooting;
+
+    public LayerMask walkableMask;
+    public LayerMask shootableMask;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,26 +27,67 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DoMovement();
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            DoShooting();
+        }
+        else
+        {
+            DoMovement();
+        }
+        
     }
 
     private void DoMovement()
     {
+        isShooting = false;
+        
+        playerAgent.isStopped = false;
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, clickableMask))
+        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, walkableMask))
         {
             debugTransform.position = hit.point;
-            targetPos = hit.point;
+            walkPos = hit.point;
         }
         else
         {
-            targetPos = ray.direction * 999f;
-            debugTransform.position = targetPos;
+            walkPos = ray.direction * 999f;
+            debugTransform.position = walkPos;
         }
 
         if(Input.GetMouseButtonDown(0))
         {
-            playerAgent.SetDestination(targetPos);
+            playerAgent.SetDestination(walkPos);
+        }
+    }
+
+    private void DoShooting()
+    {
+        isShooting = true;
+        
+        playerAgent.isStopped = true;
+        playerAgent.ResetPath(); //include if the player should NOT continue after shooting
+        
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, walkableMask))
+        {
+            debugTransform.position = hit.point;
+            shootPos = hit.point;
+        }
+        else
+        {
+            shootPos = ray.direction * 999f;
+            debugTransform.position = shootPos;
+        }
+
+        transform.LookAt(new Vector3(shootPos.x, transform.position.y, shootPos.z));
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Shot a bullet at " + shootPos);
+            
+            //do shooting
         }
     }
 }
