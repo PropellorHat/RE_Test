@@ -14,8 +14,8 @@ TagManager:
   - UI
   - Player
   - CameraCol
-  - 
-  - 
+  - Enemy
+  - PlayerBullet
   - 
   - 
   - 

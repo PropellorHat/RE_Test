@@ -10,8 +10,11 @@ public class PlayerController : MonoBehaviour
     public Transform debugTransform;
     private Camera mainCam;
 
+    private ShootScript shootScript;
+
     private Vector3 walkPos;
-    private Vector3 shootPos;
+    [HideInInspector]
+    public Vector3 shootPos;
 
     public bool isShooting;
 
@@ -19,9 +22,11 @@ public class PlayerController : MonoBehaviour
     public LayerMask shootableMask;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         mainCam = Camera.main;
+
+        shootScript = GetComponent<ShootScript>();
     }
 
     // Update is called once per frame
@@ -35,7 +40,6 @@ public class PlayerController : MonoBehaviour
         {
             DoMovement();
         }
-        
     }
 
     private void DoMovement()
@@ -70,7 +74,7 @@ public class PlayerController : MonoBehaviour
         playerAgent.ResetPath(); //include if the player should NOT continue after shooting
         
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, walkableMask))
+        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, shootableMask))
         {
             debugTransform.position = hit.point;
             shootPos = hit.point;
@@ -81,13 +85,9 @@ public class PlayerController : MonoBehaviour
             debugTransform.position = shootPos;
         }
 
-        transform.LookAt(new Vector3(shootPos.x, transform.position.y, shootPos.z));
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Shot a bullet at " + shootPos);
-            
-            //do shooting
-        }
+        //transform.LookAt(new Vector3(shootPos.x, transform.position.y, shootPos.z));
+        Vector3 aimDir = new Vector3(shootPos.x, transform.position.y, shootPos.z);
+        aimDir = (aimDir - transform.position).normalized;
+        transform.forward = Vector3.Lerp(transform.forward, aimDir, Time.deltaTime * 15f);
     }
 }
