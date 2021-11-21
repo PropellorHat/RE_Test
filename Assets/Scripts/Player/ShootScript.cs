@@ -44,6 +44,8 @@ public class ShootScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        hasFired = false;
+        
         if(playerController.isShooting)
         {
             if(!isReloading)
@@ -76,24 +78,20 @@ public class ShootScript : MonoBehaviour
         }
     }
 
-    private void LateUpdate()
-    {
-        hasFired = false;
-    }
-
     private void ShootManual()
     {
         if (Input.GetButtonDown("Fire1"))
         {
             if (fireCooldown <= 0f && ammoInMag > 0)
             {
-                hasFired = true;                
+                                
                 fireCooldown = fireRate;
                 for (int f = 0; f < numberOfBullets; f++)
                 {
                     SpawnProjectile();
                 }
                 ammoInMag -= ammoCost;
+                hasFired = true;
             }
         }
         fireCooldown -= 1 * Time.deltaTime;
@@ -105,13 +103,14 @@ public class ShootScript : MonoBehaviour
         {
             if (fireCooldown <= 0f && ammoInMag > 0)
             {
-                hasFired = true;
+                
                 fireCooldown = fireRate;
                 for (int f = 0; f < numberOfBullets; f++)
                 {
                     SpawnProjectile();
                 }
                 ammoInMag -= ammoCost;
+                hasFired = true;
             }
         }
         fireCooldown -= 1 * Time.deltaTime;

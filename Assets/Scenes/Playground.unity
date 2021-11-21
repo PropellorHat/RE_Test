@@ -337,6 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588636374}
   - component: {fileID: 588636373}
+  - component: {fileID: 588636375}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -356,10 +357,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 10
+  m_Intensity: 16.41
   m_Range: 5.19
-  m_SpotAngle: 171.24146
-  m_InnerSpotAngle: 164.65019
+  m_SpotAngle: 136.36697
+  m_InnerSpotAngle: 109.655815
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -413,13 +414,32 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588636372}
-  m_LocalRotation: {x: 0.7071066, y: -0, z: -0, w: 0.70710707}
+  m_LocalRotation: {x: 0.5000021, y: -0.49999797, z: 0.4999975, w: 0.5000025}
   m_LocalPosition: {x: 6.711, y: 2.79, z: 11.077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 89.999}
+--- !u!95 &588636375
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588636372}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bcb2ca470d4e44b41bd10a2ecc516686, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &700051398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8338988566280778637, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
@@ -1784,7 +1804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646520144}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.00000020861623}
-  m_LocalPosition: {x: 0, y: 0, z: 6.98}
+  m_LocalPosition: {x: 6.29, y: 0, z: 9.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 508539734}

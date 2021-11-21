@@ -6,6 +6,8 @@ public class HitscanBullet : Bullet
 {
     private LineRenderer lr;
 
+    public LayerMask mask;
+
     private void Awake()
     {
         lr = GetComponent<LineRenderer>();
@@ -14,7 +16,7 @@ public class HitscanBullet : Bullet
     // Start is called before the first frame update
     void Start()
     {
-        if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
+        if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Mathf.Infinity, mask, QueryTriggerInteraction.Ignore))
         {
             IDamageable<float> damageTarget = hit.collider.gameObject.GetComponent<IDamageable<float>>();
 
