@@ -28,9 +28,7 @@ public class HitscanBullet : Bullet
             lr.SetPosition(0, transform.position);
             lr.SetPosition(1, hit.point);
 
-            
-
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, 0.2f);
         }
     }
 
@@ -38,5 +36,6 @@ public class HitscanBullet : Bullet
     void Update()
     {
         lr.SetColors(Color.Lerp(lr.startColor, Color.clear, Time.deltaTime * 10f), Color.Lerp(lr.endColor, Color.clear, Time.deltaTime * 10f));
+
     }
 }

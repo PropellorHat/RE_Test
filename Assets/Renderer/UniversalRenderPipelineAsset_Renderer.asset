@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 985e9c5559c4de34fb504dd509c218c3, type: 3}
-  m_Name: NewBlitRenderPassFeature
+  m_Name: PixelRenderPass
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     material: {fileID: 2100000, guid: eb37cf0183002fb44a1a53daf77a0962, type: 2}
 --- !u!114 &-2314875769789174650
@@ -25,9 +25,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 985e9c5559c4de34fb504dd509c218c3, type: 3}
-  m_Name: NewBlitRenderPassFeature
+  m_Name: ReColorRenderPass
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     material: {fileID: 2100000, guid: a6ef98e4922b60d4d9d5c68cf162115a, type: 2}
 --- !u!114 &11400000
