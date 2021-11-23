@@ -6,6 +6,11 @@ public class HitscanBullet : Bullet
 {
     private LineRenderer lr;
 
+    public Light light;
+    public float flashBrightness;
+    public AnimationCurve flashFalloff;
+    private float flashTimer;
+
     public LayerMask mask;
 
     private void Awake()
@@ -16,7 +21,10 @@ public class HitscanBullet : Bullet
     // Start is called before the first frame update
     void Start()
     {
-        if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Mathf.Infinity, mask, QueryTriggerInteraction.Ignore))
+        light.intensity = flashBrightness;
+        flashTimer = Time.time;
+
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Mathf.Infinity, mask, QueryTriggerInteraction.Ignore))
         {
             IDamageable<float> damageTarget = hit.collider.gameObject.GetComponent<IDamageable<float>>();
 
@@ -37,5 +45,20 @@ public class HitscanBullet : Bullet
     {
         lr.SetColors(Color.Lerp(lr.startColor, Color.clear, Time.deltaTime * 10f), Color.Lerp(lr.endColor, Color.clear, Time.deltaTime * 10f));
 
+        //light.intensity = Mathf.Lerp(light.intensity, 0f, Time.deltaTime * 10f);
+
+        if (flashTimer < 0)
+        {
+            return;
+        }
+        float curveTime = (Time.time - flashTimer) / 0.2f;
+        if (curveTime > 1)
+        {
+            flashTimer = -1;
+        }
+        else
+        {
+            light.intensity = flashFalloff.Evaluate(curveTime);
+        }
     }
 }
