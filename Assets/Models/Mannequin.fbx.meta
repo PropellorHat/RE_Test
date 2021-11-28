@@ -2,7 +2,16 @@ fileFormatVersion: 2
 guid: 4e441219344399443b1cff023d4214ca
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 4723146814002874508
+    second: Armature|Attack
+  - first:
+      74: 4106399916549189888
+    second: Armature|Idle.001
+  - first:
+      74: 8349542763059015795
+    second: Armature|Walk
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -16,13 +25,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
-      does not match position in animation file:\n\t'Upper Leg.L' : position error
-      = 88.569427 mm\n\t'Lower Leg.L' : position error = 371.650543 mm\n\t'Foot.L'
-      : position error = 431.172729 mm\n\t'Toes.L' : position error = 115.028427
-      mm\n\t'Upper Leg.R' : position error = 88.569435 mm\n\t'Lower Leg.R' : position
-      error = 371.650574 mm\n\t'Foot.R' : position error = 431.172821 mm\n\t'Toes.R'
-      : position error = 115.028442 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -79,7 +82,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []

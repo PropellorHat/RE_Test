@@ -31,6 +31,18 @@ public class HitscanBullet : Bullet
             if (damageTarget != null)
             {
                 damageTarget.TakeDamage(damage);
+
+                Collider[] colliders = Physics.OverlapSphere(hit.point, 1f);
+
+                foreach (Collider colHit in colliders)
+                {
+                    Rigidbody rb = colHit.GetComponent<Rigidbody>();
+
+                    if(rb != null)
+                    {
+                        rb.AddExplosionForce(500f, hit.point, 1f);
+                    }
+                }
             }
 
             lr.SetPosition(0, transform.position);
