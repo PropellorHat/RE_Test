@@ -6059,7 +6059,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801663478}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3836b244b1f65da4f8cc57808879ea50, type: 3}
   m_Name: 
@@ -7347,7 +7347,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -21163,6 +21163,7 @@ MonoBehaviour:
   debugTransform: {fileID: 938652792}
   shootPos: {x: 0, y: 0, z: 0}
   isShooting: 0
+  pState: 0
   walkableMask:
     serializedVersion: 2
     m_Bits: 1
@@ -35560,7 +35561,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4416926083347132227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3836b244b1f65da4f8cc57808879ea50, type: 3}
   m_Name: 

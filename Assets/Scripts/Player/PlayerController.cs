@@ -18,6 +18,15 @@ public class PlayerController : MonoBehaviour
 
     public bool isShooting;
 
+    public enum PlayerState
+    {
+        Walking,
+        Shooting,
+        Reloading,
+        Grapple
+    }
+    public PlayerState pState;
+
     public LayerMask walkableMask;
     public LayerMask shootableMask;
 
@@ -29,25 +38,43 @@ public class PlayerController : MonoBehaviour
         shootScript = GetComponent<ShootScript>();
     }
 
+    private void Start()
+    {
+        pState = PlayerState.Walking;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(shootScript.isReloading)
+        switch (pState)
         {
-            playerAgent.isStopped = true;
-            playerAgent.ResetPath();
+            case PlayerState.Walking:
+                DoMovement();
+                break;
 
-            return;
+            case PlayerState.Shooting:
+                DoShooting();
+                break;
+
+            case PlayerState.Reloading:
+                DoReload();
+                break;
+
+            case PlayerState.Grapple:
+
+                break;
+
+            default:
+                break;
         }
-        
-        if(Input.GetKey(KeyCode.LeftShift))
-        {
-            DoShooting();
-        }
-        else
-        {
-            DoMovement();
-        }
+    }
+
+    private void DoReload()
+    {
+        isShooting = false;
+
+        playerAgent.isStopped = true;
+        playerAgent.ResetPath();
     }
 
     private void DoMovement()
@@ -71,6 +98,11 @@ public class PlayerController : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             playerAgent.SetDestination(walkPos);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            pState = PlayerState.Shooting;
         }
     }
 
@@ -97,5 +129,10 @@ public class PlayerController : MonoBehaviour
         Vector3 aimDir = new Vector3(shootPos.x, transform.position.y, shootPos.z);
         aimDir = (aimDir - transform.position).normalized;
         transform.forward = Vector3.Lerp(transform.forward, aimDir, Time.deltaTime * 15f);
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            pState = PlayerState.Walking;
+        }
     }
 }

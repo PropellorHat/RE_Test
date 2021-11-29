@@ -129,11 +129,15 @@ public class ShootScript : MonoBehaviour
 
     public IEnumerator Reload()
     {
+        playerController.pState = PlayerController.PlayerState.Reloading;
+
         isReloading = true;
 
         yield return new WaitForSeconds(reloadTime);
         ammoInMag = magSize;
 
         isReloading = false;
+
+        playerController.pState = PlayerController.PlayerState.Walking;
     }
 }
