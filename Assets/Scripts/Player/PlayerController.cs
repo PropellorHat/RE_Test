@@ -32,6 +32,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(shootScript.isReloading)
+        {
+            playerAgent.isStopped = true;
+            playerAgent.ResetPath();
+
+            return;
+        }
+        
         if(Input.GetKey(KeyCode.LeftShift))
         {
             DoShooting();
@@ -77,7 +85,7 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, shootableMask))
         {
             debugTransform.position = hit.point;
-            shootPos = hit.point;
+            shootPos = hit.point + (ray.direction * 0.5f);
         }
         else
         {
