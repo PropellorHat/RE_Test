@@ -25,6 +25,9 @@ public class EnemyAI : MonoBehaviour
     public bool hasAttacked;
     public float attackRate;
     private float attackCooldown;
+    public GameObject bullet;
+    public Transform firingPos;
+    public float damage;
     
     // Start is called before the first frame update
     void Start()
@@ -90,6 +93,9 @@ public class EnemyAI : MonoBehaviour
             hasAttacked = true;
 
             //do the attack here
+            GameObject bul = Instantiate(bullet, firingPos.transform.position, firingPos.transform.rotation);
+            Bullet bulStats = bul.GetComponent<Bullet>();
+            bulStats.damage = damage;
 
             attackCooldown = attackRate;
         }

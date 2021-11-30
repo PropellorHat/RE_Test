@@ -5935,6 +5935,7 @@ Transform:
   m_Children:
   - {fileID: 1216262276}
   - {fileID: 1713700317}
+  - {fileID: 1805382268}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6013,7 +6014,7 @@ NavMeshAgent:
   m_Speed: 0.5
   m_Acceleration: 4
   avoidancePriority: 50
-  m_AngularSpeed: 60
+  m_AngularSpeed: 180
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -6040,6 +6041,9 @@ MonoBehaviour:
   state: 0
   hasAttacked: 0
   attackRate: 2
+  bullet: {fileID: 2958023139638826227, guid: ceb817268aee24346b7efa1b7c88c021, type: 3}
+  firingPos: {fileID: 1805382268}
+  damage: 1
 --- !u!114 &801663486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25457,6 +25461,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f07f3509f9d60f44abc8750fc17c90a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1805382267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805382268}
+  m_Layer: 0
+  m_Name: FirePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1805382268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805382267}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8848574, z: 0.41500044}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 801663480}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1807390458
 GameObject:
   m_ObjectHideFlags: 0
@@ -35547,6 +35581,7 @@ GameObject:
   - component: {fileID: 1493167215}
   - component: {fileID: 1493167219}
   - component: {fileID: 1493167220}
+  - component: {fileID: 4416926083347132229}
   m_Layer: 6
   m_Name: PlayerArmature
   m_TagString: Player
@@ -35568,6 +35603,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RootBone: {fileID: 7898439673160253256}
   StoppedFrameCount: 10
+--- !u!114 &4416926083347132229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416926083347132227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fffd424beb2fa4db82a0f831fc271b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!1 &4523139368338627359
 GameObject:
   m_ObjectHideFlags: 0
