@@ -18,6 +18,7 @@ public class ShootScript : MonoBehaviour
     public bool isReloading;
     public bool hasFired;
 
+    [Header("Bullet Stats")]
     public float damage;
     public GameObject bullet;
     public Transform firingPos;
@@ -26,14 +27,19 @@ public class ShootScript : MonoBehaviour
     public float bulletSpeed;
     public float bulletLifetime;
 
+    [Header("Speed")]
     public float fireRate;
     [HideInInspector]
     public float fireCooldown;
 
+    [Header("Reload")]
     public int magSize;
     public int ammoInMag;
     public int ammoCost;
     public float reloadTime;
+
+    [Header("Ammo")]
+    public int heldAmmo;
 
 
     void Awake()
@@ -74,7 +80,17 @@ public class ShootScript : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.R))
         {
-            StartCoroutine("Reload");
+            if (heldAmmo >= magSize - ammoInMag)
+            {
+                //add animation here
+                
+                StartCoroutine("Reload");
+            }
+            else
+            {
+                Debug.Log("no ammo chap");
+            }
+            
         }
     }
 
@@ -129,15 +145,17 @@ public class ShootScript : MonoBehaviour
 
     public IEnumerator Reload()
     {
+        
+        
         playerController.pState = PlayerController.PlayerState.Reloading;
-
         isReloading = true;
 
         yield return new WaitForSeconds(reloadTime);
+
+        heldAmmo -= magSize - ammoInMag;
         ammoInMag = magSize;
 
         isReloading = false;
-
         playerController.pState = PlayerController.PlayerState.Walking;
     }
 }
