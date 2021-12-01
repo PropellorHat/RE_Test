@@ -26,7 +26,7 @@ public class HitscanBullet : Bullet
 
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Mathf.Infinity, mask, QueryTriggerInteraction.Ignore))
         {
-            IDamageable<float> damageTarget = hit.collider.gameObject.GetComponent<IDamageable<float>>();
+            IDamageable damageTarget = hit.collider.gameObject.GetComponent<IDamageable>();
 
             if (damageTarget != null)
             {

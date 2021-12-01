@@ -27,7 +27,7 @@ public class EnemyAI : MonoBehaviour
     private float attackCooldown;
     public GameObject bullet;
     public Transform firingPos;
-    public float damage;
+    public int damage;
     
     // Start is called before the first frame update
     void Start()

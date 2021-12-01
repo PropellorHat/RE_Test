@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour, IDamageable<float>
+public class EnemyHealth : MonoBehaviour, IDamageable
 {
     public float maxHealth;
     private float currentHealth;
@@ -24,7 +24,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable<float>
         Destroy(gameObject);
     }
 
-    public void TakeDamage(float damageTaken)
+    public void TakeDamage(int damageTaken)
     {
         currentHealth -= damageTaken;
         if(currentHealth <= 0f)

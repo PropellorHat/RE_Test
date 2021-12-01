@@ -19,7 +19,7 @@ public class ShootScript : MonoBehaviour
     public bool hasFired;
 
     [Header("Bullet Stats")]
-    public float damage;
+    public int damage;
     public GameObject bullet;
     public Transform firingPos;
     public int numberOfBullets;

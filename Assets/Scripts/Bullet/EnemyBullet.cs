@@ -6,7 +6,7 @@ public class EnemyBullet : Bullet
 {
     private void OnTriggerEnter(Collider other)
     {
-        IDamageable<float> damageTarget = other.gameObject.GetComponent<IDamageable<float>>();
+        IDamageable damageTarget = other.gameObject.GetComponent<IDamageable>();
 
         if (damageTarget != null)
         {

@@ -25,7 +25,7 @@ public class ProjectileBullet : Bullet
 
     private void OnCollisionEnter(Collision collision)
     {
-        IDamageable<float> damageTarget = collision.gameObject.GetComponent<IDamageable<float>>();
+        IDamageable damageTarget = collision.gameObject.GetComponent<IDamageable>();
 
         if(damageTarget != null)
         {
