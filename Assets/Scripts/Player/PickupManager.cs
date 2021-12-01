@@ -34,7 +34,7 @@ public class PickupManager : MonoBehaviour
         
         
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E) && pickups.Count > 0)
         {
             switch (pickups[0].pickupType)
             {

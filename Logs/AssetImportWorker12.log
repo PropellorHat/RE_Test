@@ -1,0 +1,182 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.9f1 (108be757e447) revision 1084391'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 8103 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\2020.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker12
+-projectPath
+C:/Users/al_dude360/Documents/GitHub/RE_Test
+-logFile
+Logs/AssetImportWorker12.log
+-srvPort
+2881
+Successfully changed project path to: C:/Users/al_dude360/Documents/GitHub/RE_Test
+C:/Users/al_dude360/Documents/GitHub/RE_Test
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 164.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.9f1 (108be757e447)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/al_dude360/Documents/GitHub/RE_Test/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   27.21.14.6089
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2020.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2020.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005103 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 98.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 13.859 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002480 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 130.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.002 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.49 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3000 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.1 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3451.
+Total: 5.811700 ms (FindLiveObjects: 0.967500 ms CreateObjectMapping: 0.355300 ms MarkObjects: 4.261400 ms  DeleteObjects: 0.225400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Fonts
+  artifactKey: Guid(dab6ead94658af54996f0adea057c5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(dab6ead94658af54996f0adea057c5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e3242590d62f30ab0dbb07fdf1dea8') in 0.093280 seconds
+  Import took 0.143595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.608879 seconds.
+  path: Assets/Fonts/VCR_OSD_MONO_1.001.ttf
+  artifactKey: Guid(636636b18e4efd74085b35764f7d7784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/VCR_OSD_MONO_1.001.ttf using Guid(636636b18e4efd74085b35764f7d7784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bcd8d984793ee5d21cfe3a02a2696a6') in 1.825939 seconds
+  Import took 1.874365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.883065 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8de952a0e942554be02777d918bccc') in 0.091348 seconds
+  Import took 0.127369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004528 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8de952a0e942554be02777d918bccc') in 0.034260 seconds
+  Import took 0.063721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.190151 seconds.
+  path: Assets/Fonts/VCR_OSD_MONO_1.asset
+  artifactKey: Guid(814fef0820ac47f49bbf19cd2c8c37f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/VCR_OSD_MONO_1.asset using Guid(814fef0820ac47f49bbf19cd2c8c37f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d1943d5373d68cc84ac05ce98e3318') in 0.159902 seconds
+  Import took 0.227552 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003119 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.002 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.5 MB.
+System memory in use after: 134.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3537.
+Total: 3.661000 ms (FindLiveObjects: 0.347000 ms CreateObjectMapping: 0.147400 ms MarkObjects: 3.054800 ms  DeleteObjects: 0.108800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 697.736752 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76cb6688e0c3c8df6700643796bddd5') in 0.471054 seconds
+  Import took 0.481242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.567628 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b28c818dd9b784b2256453772daef373') in 0.500077 seconds
+  Import took 0.522745 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002614 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.538 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.7 MB.
+System memory in use after: 134.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3578.
+Total: 3.554300 ms (FindLiveObjects: 0.363700 ms CreateObjectMapping: 0.161400 ms MarkObjects: 2.928500 ms  DeleteObjects: 0.099700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7897.286353 seconds.
+  path: Assets/Fonts/VCR_OSD_MONO_1.asset
+  artifactKey: Guid(814fef0820ac47f49bbf19cd2c8c37f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/VCR_OSD_MONO_1.asset using Guid(814fef0820ac47f49bbf19cd2c8c37f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ba9ef9ec6250f0bbd4bd1ec49d05a2') in 0.656469 seconds
+  Import took 0.688483 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

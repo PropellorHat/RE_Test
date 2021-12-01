@@ -80,7 +80,7 @@ public class ShootScript : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.R))
         {
-            if (heldAmmo >= magSize - ammoInMag)
+            if (heldAmmo > 0)
             {
                 //add animation here
                 
@@ -152,8 +152,19 @@ public class ShootScript : MonoBehaviour
 
         yield return new WaitForSeconds(reloadTime);
 
-        heldAmmo -= magSize - ammoInMag;
-        ammoInMag = magSize;
+        //heldAmmo -= magSize - ammoInMag;
+        //ammoInMag = magSize;
+        int curAmmoInMag = ammoInMag;
+
+        for (int i = 0; i < magSize - curAmmoInMag; i++)
+        {
+            if(heldAmmo > 0)
+            {
+                heldAmmo--;
+                ammoInMag++;
+            }
+        }
+        
 
         isReloading = false;
         playerController.pState = PlayerController.PlayerState.Walking;
