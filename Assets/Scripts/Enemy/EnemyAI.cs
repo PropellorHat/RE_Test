@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Transform player;
-    
+
     public bool isHunting;
     public float detectRange;
     public float attackRange;
@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour
 
     public bool hasAttacked;
     public float attackRate;
-    private float attackCooldown;
+    [HideInInspector] public float attackCooldown;
     public GameObject bullet;
     public Transform firingPos;
     public int damage;
@@ -42,6 +42,8 @@ public class EnemyAI : MonoBehaviour
     {
         distToPlayer = (player.position - transform.position).magnitude;
 
+        attackCooldown -= Time.deltaTime;
+        
         switch (state)
         {
             case EnemyState.Idle:
@@ -60,7 +62,7 @@ public class EnemyAI : MonoBehaviour
                 break;
         }
 
-        attackCooldown -= Time.deltaTime;
+        
     }
 
     private void Idle()
@@ -81,6 +83,7 @@ public class EnemyAI : MonoBehaviour
         if(distToPlayer < attackRange)
         {
             state = EnemyState.Attacking;
+            attackCooldown = attackRate;
         }
     }
 

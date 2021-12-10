@@ -29,7 +29,7 @@ public class EnemyAnimation : MonoBehaviour
             anim.SetBool("IsWalking", false);
         }
 
-        if(enemy.hasAttacked == true)
+        if(enemy.attackCooldown >= enemy.attackRate)
         {
             anim.SetTrigger("Attack");
         }

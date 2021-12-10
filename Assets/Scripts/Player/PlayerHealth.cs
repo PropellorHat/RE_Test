@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public int maxHealth;
-    private int currentHealth;
+    [HideInInspector] public int currentHealth;
+    public bool isLowHealth;
+
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,14 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-
+        if (currentHealth <= maxHealth / 4)
+        {
+            isLowHealth = true;
+        }
+        else
+        {
+            isLowHealth = false;
+        }
     }
 
     public void OnKill()
@@ -31,5 +40,11 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         {
             OnKill();
         }
+    }
+
+    public void Heal(int healthGained)
+    {
+        currentHealth += healthGained;
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
     }
 }

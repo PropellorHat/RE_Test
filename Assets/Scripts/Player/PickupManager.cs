@@ -39,7 +39,7 @@ public class PickupManager : MonoBehaviour
             switch (pickups[0].pickupType)
             {
                 case Pickup.PickupType.Health:
-                    health.TakeDamage(-pickups[0].quantity);
+                    health.Heal(pickups[0].quantity);
                     Destroy(pickups[0].gameObject);
                     pickups.Clear();
                     return;
