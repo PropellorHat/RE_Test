@@ -8,6 +8,7 @@ public class PlayerAnimation : MonoBehaviour
     private NavMeshAgent playerAgent;
     private PlayerController playerCont;
     private ShootScript shootScript;
+    private PlayerHealth health;
     private Animator anim;
 
     private bool doRecoil;
@@ -23,6 +24,7 @@ public class PlayerAnimation : MonoBehaviour
         playerAgent = GetComponent<NavMeshAgent>();
         playerCont = GetComponent<PlayerController>();
         shootScript = GetComponent<ShootScript>();
+        health = GetComponent<PlayerHealth>();
         anim = GetComponent<Animator>();
     }
 
@@ -30,6 +32,7 @@ public class PlayerAnimation : MonoBehaviour
     void Update()
     {
         anim.SetFloat("Speed", playerAgent.velocity.magnitude);
+        anim.SetBool("lowHealth", health.isLowHealth);
 
 
         if(playerCont.isShooting)
