@@ -15,11 +15,11 @@ C:/Users/al_dude360/Documents/GitHub/RE_Test
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-25838
+9735
 Successfully changed project path to: C:/Users/al_dude360/Documents/GitHub/RE_Test
 C:/Users/al_dude360/Documents/GitHub/RE_Test
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 2190.96 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 130.05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -31,3 +31,636 @@ Direct3D:
     Vendor:   
     VRAM:     2010 MB
     Driver:   27.21.14.6089
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2020.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2020.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004341 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 116.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.106 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004380 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 114.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.153 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.37 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3002 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.4 MB.
+System memory in use after: 140.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3453.
+Total: 3.545900 ms (FindLiveObjects: 0.479200 ms CreateObjectMapping: 0.327200 ms MarkObjects: 2.612800 ms  DeleteObjects: 0.125000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N.anim 1.fbx
+  artifactKey: Guid(2426c4acfff18944d865285ceb260859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N.anim 1.fbx using Guid(2426c4acfff18944d865285ceb260859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387339e2f6738d58fc8e4162dfa972f8') in 4.384858 seconds
+  Import took 4.542880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055575 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Stand--Idle.anim.fbx
+  artifactKey: Guid(12e52e465ed793a4d801955e9f964a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Stand--Idle.anim.fbx using Guid(12e52e465ed793a4d801955e9f964a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad149218823c2fdb523d907c4837920a') in 0.275858 seconds
+  Import took 0.348444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N_Land.anim.fbx
+  artifactKey: Guid(3c033631149b9c541bcf155cd94cccba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N_Land.anim.fbx using Guid(3c033631149b9c541bcf155cd94cccba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3804e377ec192be58efc182a56e7ddb') in 0.072083 seconds
+  Import took 0.297625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--Jump.anim.fbx
+  artifactKey: Guid(98f277b0c8055e143b2fcf058d3c27dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--Jump.anim.fbx using Guid(98f277b0c8055e143b2fcf058d3c27dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977dcc258efda89d416d4ff5108f73e7') in 0.077816 seconds
+  Import took 0.085851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_S.anim.fbx
+  artifactKey: Guid(a073c604c44135e438eeeaef77058ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_S.anim.fbx using Guid(a073c604c44135e438eeeaef77058ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84cfe333ae231270439a01898769241f') in 0.297002 seconds
+  Import took 0.485499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000807 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N.anim.fbx
+  artifactKey: Guid(8269a9f8cf495034c817722ac21f309f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N.anim.fbx using Guid(8269a9f8cf495034c817722ac21f309f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d2cd058bd5a2545c13b06ff70dbe94') in 0.056530 seconds
+  Import took 0.152441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx
+  artifactKey: Guid(16114d403eabb53438de032c6f0d1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx using Guid(16114d403eabb53438de032c6f0d1deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0272354ac82696678d89fcd1e815b7ea') in 0.432147 seconds
+  Import took 0.466164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx
+  artifactKey: Guid(063aa479676c4084ebf187660ca0a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx using Guid(063aa479676c4084ebf187660ca0a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330c3f845de3d885880d422a0a57e4c3') in 0.095439 seconds
+  Import took 0.252658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N_Land.anim.fbx
+  artifactKey: Guid(325a26d62b61fa94cb3c97c435efebc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N_Land.anim.fbx using Guid(325a26d62b61fa94cb3c97c435efebc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3099924f32632242247b11ee314646') in 0.077191 seconds
+  Import took 0.127401 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002410 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.406 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3456.
+Total: 15.637400 ms (FindLiveObjects: 0.416200 ms CreateObjectMapping: 0.165100 ms MarkObjects: 14.875100 ms  DeleteObjects: 0.178400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1502.189434 seconds.
+  path: Assets/Scripts/Player/ShootScript.cs
+  artifactKey: Guid(941c10a2463e28946aa25820808b7ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/ShootScript.cs using Guid(941c10a2463e28946aa25820808b7ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6102f78bf8cf6beda215ee8006e643b6') in 0.528666 seconds
+  Import took 0.579644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 292.105622 seconds.
+  path: Assets/Animations/Player
+  artifactKey: Guid(a7d21aa1f6c719749b242ece6c2799da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player using Guid(a7d21aa1f6c719749b242ece6c2799da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc038fe9d686ce510439f16fab3e7f7a') in 0.187750 seconds
+  Import took 0.279776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Animations/Player/AimingMask.mask
+  artifactKey: Guid(45bddbfcb49e536468d577547fdb9295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/AimingMask.mask using Guid(45bddbfcb49e536468d577547fdb9295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377c45a3dcf3ed235f7b8662c0936519') in 0.154628 seconds
+  Import took 0.193351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Animations/Player/xbot@Pistol Idle.fbx
+  artifactKey: Guid(0158d56d3f8d468438669a3dc85dd209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/xbot@Pistol Idle.fbx using Guid(0158d56d3f8d468438669a3dc85dd209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b37f82fcd3edcf087a6033a3db6c52') in 1.325713 seconds
+  Import took 1.377911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Animations/Player/xbot@Pistol Shoot.fbx
+  artifactKey: Guid(e4834b665458612458bffe4e31778517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/xbot@Pistol Shoot.fbx using Guid(e4834b665458612458bffe4e31778517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad68846b1a72acaa1ee7c1e9c2bbec3') in 0.287759 seconds
+  Import took 0.316368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/Animations/Player/xbot@Pistol Reload.fbx
+  artifactKey: Guid(643e2669e77045b4d92c7e166ea81f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/xbot@Pistol Reload.fbx using Guid(643e2669e77045b4d92c7e166ea81f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c1e9fb6c911d4de9c3105291b4cd4b') in 0.161985 seconds
+  Import took 0.196851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Animations/Player/MannequinDefault@Walking.fbx
+  artifactKey: Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/MannequinDefault@Walking.fbx using Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa95439968db2bc2be64d16d9b3d5a4') in 0.098822 seconds
+  Import took 0.130383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 125.567561 seconds.
+  path: Assets/Animations/Player/MannequinDefault@Walking.fbx
+  artifactKey: Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/MannequinDefault@Walking.fbx using Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e69b0d0cafbee6a6610d85c6feda33') in 0.093132 seconds
+  Import took 0.147687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.732611 seconds.
+  path: Assets/Animations/Player/MannequinDefault@Walking.fbx
+  artifactKey: Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/MannequinDefault@Walking.fbx using Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c2f7109e43b6c520f365b0ac81c926') in 0.036216 seconds
+  Import took 0.059031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 372.220696 seconds.
+  path: Assets/Animations/Player/MannequinDefault@Walking.fbx
+  artifactKey: Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/MannequinDefault@Walking.fbx using Guid(865d2345a364d01439f1c2c4562d9c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a60f6fad657999585d5d7afaef9acb8') in 0.041143 seconds
+  Import took 0.075645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.811448 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller
+  artifactKey: Guid(40db3173a05ae3242b1c182a09b0a183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller using Guid(40db3173a05ae3242b1c182a09b0a183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fde876b9f9bebb264b3db36f87c5db3') in 0.147431 seconds
+  Import took 0.185446 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001999 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.890 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.1 MB.
+System memory in use after: 149.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3541.
+Total: 10.107700 ms (FindLiveObjects: 0.597600 ms CreateObjectMapping: 0.499200 ms MarkObjects: 8.872100 ms  DeleteObjects: 0.136800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.056895 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.855 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.1 MB.
+System memory in use after: 149.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3544.
+Total: 4.532600 ms (FindLiveObjects: 0.593700 ms CreateObjectMapping: 0.233400 ms MarkObjects: 3.576400 ms  DeleteObjects: 0.127200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1956.852895 seconds.
+  path: Assets/Animations/Player/ybot@Walking.fbx
+  artifactKey: Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Walking.fbx using Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd549346af3e97d5111e24a3762d8338f') in 0.123284 seconds
+  Import took 0.175767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.838366 seconds.
+  path: Assets/Animations/Player/ybot@Walking.fbx
+  artifactKey: Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Walking.fbx using Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef9eb57c6adfa989a55de8cf78b7253') in 0.211500 seconds
+  Import took 0.360682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.715276 seconds.
+  path: Assets/Animations/Player/ybot@Walking.fbx
+  artifactKey: Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Walking.fbx using Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9796e4e8c323f34427525aaeb6f0794') in 4.674230 seconds
+  Import took 5.207712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 104.450125 seconds.
+  path: Assets/Animations/Player/ybot@Walking.fbx
+  artifactKey: Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Walking.fbx using Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d467293843620f2692e1282e6d5fc5') in 0.083804 seconds
+  Import took 0.134402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016946 seconds.
+  path: Assets/Animations/Player/ybot@Walking.fbx
+  artifactKey: Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Walking.fbx using Guid(192c52de31b8aa94fa176922a1e35b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d467293843620f2692e1282e6d5fc5') in 0.073939 seconds
+  Import took 0.118260 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014228 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.754 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3547.
+Total: 30.485600 ms (FindLiveObjects: 2.226100 ms CreateObjectMapping: 1.243500 ms MarkObjects: 25.257200 ms  DeleteObjects: 1.753000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003613 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.871 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3550.
+Total: 12.265700 ms (FindLiveObjects: 2.407100 ms CreateObjectMapping: 0.742100 ms MarkObjects: 8.680600 ms  DeleteObjects: 0.428100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.019 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 5.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3553.
+Total: 25.878900 ms (FindLiveObjects: 1.320600 ms CreateObjectMapping: 1.965000 ms MarkObjects: 22.432000 ms  DeleteObjects: 0.157800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 546.220842 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c600bd1d33a978046cd8d428651915') in 0.142342 seconds
+  Import took 0.233021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.745878 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c496f54786341bc2edf2ea04190e094') in 0.039904 seconds
+  Import took 0.292105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.220903 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bddc14a9719eac01098d28459acb6555') in 0.171037 seconds
+  Import took 0.616645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.564397 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20cb1cd06ff9712277abc345c04d63d') in 1.448145 seconds
+  Import took 1.630603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.451611 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be323c8557611314be7ce500af3d3ec') in 0.205730 seconds
+  Import took 0.336479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001675 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be323c8557611314be7ce500af3d3ec') in 0.901905 seconds
+  Import took 0.956731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.014981 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7230e29342091e830d246346cca59286') in 0.408490 seconds
+  Import took 0.590507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.398293 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafec3658c5d8e75117da0d6b03daa4d') in 1.614252 seconds
+  Import took 1.795373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003417 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafec3658c5d8e75117da0d6b03daa4d') in 0.214937 seconds
+  Import took 0.590749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.158713 seconds.
+  path: Assets/StarterAssets
+  artifactKey: Guid(155c5bc2fd2511140af31d71820ba871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets using Guid(155c5bc2fd2511140af31d71820ba871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aae0d40b53d382a2a6d5265dd16ddb9') in 0.059885 seconds
+  Import took 0.168616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.969452 seconds.
+  path: Assets/StarterAssets/ThirdPersonController
+  artifactKey: Guid(54b90d7f60b179e4e9909cd127aa060d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController using Guid(54b90d7f60b179e4e9909cd127aa060d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98897e5c3d4e0027d41afa92d72b8cc') in 0.094696 seconds
+  Import took 0.190184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.000089 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character
+  artifactKey: Guid(135db69c43c47ee4e97c7c6b13621056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character using Guid(135db69c43c47ee4e97c7c6b13621056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2e4553bba36919772e140cd441ccc1') in 0.052336 seconds
+  Import took 0.111668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.615599 seconds.
+  path: Assets/StarterAssets/ThirdPersonController/Character/Animations
+  artifactKey: Guid(478ef75e2d9612043ad9e092df040fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/ThirdPersonController/Character/Animations using Guid(478ef75e2d9612043ad9e092df040fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8fc815d6396f1eca4c940b9a32410b') in 0.108209 seconds
+  Import took 0.165616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.558468 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f281ff12cafb8c83b38e8d1f4f2fe1d') in 0.035847 seconds
+  Import took 0.121032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.305512 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f7223e7b1a5c0591a4ebb56f5cd691') in 0.115516 seconds
+  Import took 0.166938 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.127 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3556.
+Total: 32.679000 ms (FindLiveObjects: 6.714700 ms CreateObjectMapping: 0.516100 ms MarkObjects: 24.667000 ms  DeleteObjects: 0.763400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004210 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.926 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3559.
+Total: 63.688200 ms (FindLiveObjects: 3.668300 ms CreateObjectMapping: 2.441000 ms MarkObjects: 56.842500 ms  DeleteObjects: 0.726200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.059259 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.209 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3562.
+Total: 45.695000 ms (FindLiveObjects: 8.830100 ms CreateObjectMapping: 1.697300 ms MarkObjects: 34.349000 ms  DeleteObjects: 0.744400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008526 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 11.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 41.993 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 8.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3565.
+Total: 45.167100 ms (FindLiveObjects: 12.073200 ms CreateObjectMapping: 2.198100 ms MarkObjects: 30.660900 ms  DeleteObjects: 0.225500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008077 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.991 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 5.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3568.
+Total: 40.386800 ms (FindLiveObjects: 0.913200 ms CreateObjectMapping: 0.591500 ms MarkObjects: 38.429600 ms  DeleteObjects: 0.441200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 823.293727 seconds.
+  path: Assets/Animations/Player/ybot@Injured Idle.fbx
+  artifactKey: Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/ybot@Injured Idle.fbx using Guid(c06dc94a608a4f04597b453e1cac3aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d8d62a16ad16a02b913b08c3554892') in 1.123023 seconds
+  Import took 1.211512 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003929 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.514 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.3 MB.
+System memory in use after: 149.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3571.
+Total: 5.634100 ms (FindLiveObjects: 0.475700 ms CreateObjectMapping: 0.286200 ms MarkObjects: 4.714100 ms  DeleteObjects: 0.156500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
