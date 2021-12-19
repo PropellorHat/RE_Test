@@ -1,69 +1,122 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PickupManager : MonoBehaviour
 {
+    private PlayerInput playerInput;
+    
     private PlayerHealth health;
     private ShootScript shootScript;
 
     public float reachRadius;
     public LayerMask pickupMask;
 
-    public List<Pickup> pickups;
+    //public List<Pickup> pickups;
+    public Collider[] pickupCols;
+    private Pickup pickupToGrab;
     
     // Start is called before the first frame update
     void Awake()
     {
+        playerInput = GetComponent<PlayerInput>();
+        
         health = GetComponent<PlayerHealth>();
         shootScript = GetComponent<ShootScript>();
+    }
+
+    private void Start()
+    {
+        playerInput.OnPickup += PlayerInput_DoPickup;
+    }
+
+    private void OnDestroy()
+    {
+        playerInput.OnPickup -= PlayerInput_DoPickup;
     }
 
     // Update is called once per frame
     void Update()
     {
-        pickups.Clear();
-        Collider[] pickupsInRange = Physics.OverlapSphere(transform.position + Vector3.up, reachRadius, pickupMask, QueryTriggerInteraction.Collide);
-        if(pickupsInRange.Length > 0)
+        /*Collider[] pickupsInRange = Physics.OverlapSphere(transform.position + Vector3.up, reachRadius, pickupMask, QueryTriggerInteraction.Collide);
+        if (pickupsInRange.Length > 0)
         {
             for (int i = 0; i < pickupsInRange.Length; i++)
             {
-                pickups.Add(pickupsInRange[i].GetComponent<Pickup>());
+                Pickup currPickup = pickupsInRange[i].GetComponent<Pickup>();
+                if (!pickups.Contains(currPickup))
+                {
+                    pickups.Add(currPickup);
+                    currPickup.SetActive();
+                }
             }
         }
-        
-        
-
-        if(Input.GetKeyDown(KeyCode.E) && pickups.Count > 0)
+        foreach (Pickup pick in pickups)
         {
-            switch (pickups[0].pickupType)
+            Collider pickupCol = pick.GetComponent<Collider>();
+            if (!pickupsInRange.Contains(pickupCol))
             {
-                case Pickup.PickupType.Health:
-                    health.Heal(pickups[0].quantity);
-                    Destroy(pickups[0].gameObject);
-                    pickups.Clear();
-                    return;
-
-                case Pickup.PickupType.Ammo:
-                    shootScript.heldAmmo += pickups[0].quantity;
-                    Destroy(pickups[0].gameObject);
-                    pickups.Clear();
-                    return;
-
-                default:
-                    Debug.LogWarning(pickups[0].name + " has no type");
-                    break;
+                pickups.Remove(pick);
             }
+        }*/
+
+        pickupCols = Physics.OverlapSphere(transform.position + Vector3.up, reachRadius, pickupMask, QueryTriggerInteraction.Collide);
+        if(pickupCols.Length > 0)
+        {
+            pickupToGrab = pickupCols[0].GetComponent<Pickup>();
+            pickupToGrab.SetActive();
+        }
+        else
+        {
+            pickupToGrab = null;
         }
     }
 
-    private void LateUpdate()
+    private void PlayerInput_DoPickup()
     {
-        for (int i = 0; i < pickups.Count; i++)
+        /*if (pickups.Count > 0)
         {
-            pickups[i].SetActive();
+            Pickup currPickup = pickups[0];
+            switch (currPickup.pickupType)
+            {
+                case Pickup.PickupType.Health:
+                    health.Heal(currPickup.quantity);
+                    pickups.Remove(currPickup);
+                    Destroy(currPickup.gameObject);
+                    break;
+
+                case Pickup.PickupType.Ammo:
+                    shootScript.heldAmmo += currPickup.quantity;
+                    pickups.Remove(currPickup);
+                    Destroy(currPickup.gameObject);
+                    break;
+
+                default:
+                    Debug.LogWarning(currPickup.name + " has no type");
+                    break;
+            }
+        }*/
+        if(pickupToGrab != null)
+        {
+            switch (pickupToGrab.pickupType)
+            {
+                case Pickup.PickupType.Health:
+                    health.Heal(pickupToGrab.quantity);
+                    Destroy(pickupToGrab.gameObject);
+                    break;
+
+                case Pickup.PickupType.Ammo:
+                    shootScript.heldAmmo += pickupToGrab.quantity;
+                    Destroy(pickupToGrab.gameObject);
+                    break;
+
+                default:
+                    Debug.LogWarning(pickupToGrab.name + " has no type");
+                    break;
+            }
         }
-        //pickups[0].SetActive();
+
     }
 
     private void OnDrawGizmosSelected()

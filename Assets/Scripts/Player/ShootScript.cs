@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShootScript : MonoBehaviour
 {
     private PlayerController playerController;
+    private PlayerInput playerInput;
     
     public enum GunType
     {
@@ -45,16 +46,30 @@ public class ShootScript : MonoBehaviour
     void Awake()
     {
         playerController = GetComponent<PlayerController>();
+        playerInput = GetComponent<PlayerInput>();
+    }
+
+    private void Start()
+    {
+        playerInput.OnReload += PlayerInput_DoReload;
+        playerInput.OnShoot += PlayerInput_DoShoot;
+    }
+
+    private void OnDestroy()
+    {
+        playerInput.OnReload -= PlayerInput_DoReload;
+        playerInput.OnShoot -= PlayerInput_DoShoot;
     }
 
     // Update is called once per frame
     void Update()
     {
         hasFired = false;
-        
-        if(playerController.isShooting)
+        /*hasFired = false;
+
+        if (playerController.isShooting)
         {
-            if(!isReloading)
+            if (!isReloading)
             {
                 switch (gunType)
                 {
@@ -75,51 +90,63 @@ public class ShootScript : MonoBehaviour
 
 
             //firingPos.LookAt(playerController.shootPos);
-            
-        }
 
-        if(Input.GetKeyDown(KeyCode.R))
+        }*/
+
+        fireCooldown -= 1 * Time.deltaTime;
+    }
+
+    private void PlayerInput_DoReload()
+    {
+        StartCoroutine("Reload");
+    }
+
+    private void PlayerInput_DoShoot()
+    {
+        
+
+        if (playerController.isShooting && !isReloading)
         {
-            if (heldAmmo > 0)
+            switch (gunType)
             {
-                //add animation here
-                
-                StartCoroutine("Reload");
+                case GunType.manual:
+                    ShootManual();
+                    break;
+                case GunType.auto:
+                    //ShootAuto();
+                    Debug.LogWarning("Auto does not exist");
+                    break;
+                case GunType.charge:
+                    Debug.LogWarning("Charge does not exist");
+                    break;
+                default:
+                    Debug.LogWarning("gun type does not exist");
+                    break;
             }
-            else
-            {
-                Debug.Log("no ammo chap");
-            }
-            
         }
     }
 
     private void ShootManual()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (fireCooldown <= 0f && ammoInMag > 0)
         {
-            if (fireCooldown <= 0f && ammoInMag > 0)
+                            
+            fireCooldown = fireRate;
+            for (int f = 0; f < numberOfBullets; f++)
             {
-                                
-                fireCooldown = fireRate;
-                for (int f = 0; f < numberOfBullets; f++)
-                {
-                    SpawnProjectile();
-                }
-                ammoInMag -= ammoCost;
-                hasFired = true;
+                SpawnProjectile();
             }
+            ammoInMag -= ammoCost;
+            hasFired = true;
         }
-        fireCooldown -= 1 * Time.deltaTime;
     }
 
-    private void ShootAuto()
+    /*private void ShootAuto()
     {
-        if (Input.GetButton("Fire1"))
+        if (fireCooldown <= 0f && ammoInMag > 0)
         {
-            if (fireCooldown <= 0f && ammoInMag > 0)
+            if (Input.GetKey(KeyCode.Mouse0))
             {
-                
                 fireCooldown = fireRate;
                 for (int f = 0; f < numberOfBullets; f++)
                 {
@@ -130,7 +157,7 @@ public class ShootScript : MonoBehaviour
             }
         }
         fireCooldown -= 1 * Time.deltaTime;
-    }
+    }*/
 
     private void SpawnProjectile()
     {
@@ -145,8 +172,6 @@ public class ShootScript : MonoBehaviour
 
     public IEnumerator Reload()
     {
-        
-        
         playerController.pState = PlayerController.PlayerState.Reloading;
         isReloading = true;
 

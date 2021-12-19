@@ -24,10 +24,6 @@ public class Pickup : MonoBehaviour
         SetInactive();
     }
 
-    private void Update()
-    {
-        SetInactive();
-    }
 
     public void SetActive()
     {
