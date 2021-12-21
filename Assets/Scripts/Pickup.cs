@@ -7,6 +7,8 @@ public class Pickup : MonoBehaviour
 {
     private Outline1 outline;
 
+    private bool crRunning;
+
     public enum PickupType
     {
         Health,
@@ -21,17 +23,26 @@ public class Pickup : MonoBehaviour
     void Start()
     {
         outline = GetComponent<Outline1>();
-        SetInactive();
+        //SetInactive();
     }
 
 
     public void SetActive()
     {
         outline.enabled = true;
+        //if(!crRunning) StartCoroutine(SetInactiveRoutine());
     }
 
     public void SetInactive()
     {
         outline.enabled = false;
+    }
+
+    public IEnumerator SetInactiveRoutine()
+    {
+        crRunning = true;
+        yield return new WaitForSeconds(0.1f);
+        outline.enabled = false;
+        crRunning = false;
     }
 }

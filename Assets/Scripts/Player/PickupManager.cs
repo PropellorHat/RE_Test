@@ -13,9 +13,9 @@ public class PickupManager : MonoBehaviour
     public float reachRadius;
     public LayerMask pickupMask;
 
-    //public List<Pickup> pickups;
-    public Collider[] pickupCols;
-    private Pickup pickupToGrab;
+    public List<Pickup> pickups;
+    //public Collider[] pickupCols;
+    //private Pickup pickupToGrab;
     
     // Start is called before the first frame update
     void Awake()
@@ -36,32 +36,37 @@ public class PickupManager : MonoBehaviour
         playerInput.OnPickup -= PlayerInput_DoPickup;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(((1 << other.gameObject.layer) & pickupMask) != 0)
+        {
+            Pickup currPickup = other.gameObject.GetComponent<Pickup>();
+            if(!pickups.Contains(currPickup))
+            {
+                pickups.Add(currPickup);
+                currPickup.SetActive();
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (((1 << other.gameObject.layer) & pickupMask) != 0)
+        {
+            Pickup currPickup = other.gameObject.GetComponent<Pickup>();
+            if (pickups.Contains(currPickup))
+            {
+                pickups.Remove(currPickup);
+                currPickup.SetInactive();
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        /*Collider[] pickupsInRange = Physics.OverlapSphere(transform.position + Vector3.up, reachRadius, pickupMask, QueryTriggerInteraction.Collide);
-        if (pickupsInRange.Length > 0)
-        {
-            for (int i = 0; i < pickupsInRange.Length; i++)
-            {
-                Pickup currPickup = pickupsInRange[i].GetComponent<Pickup>();
-                if (!pickups.Contains(currPickup))
-                {
-                    pickups.Add(currPickup);
-                    currPickup.SetActive();
-                }
-            }
-        }
-        foreach (Pickup pick in pickups)
-        {
-            Collider pickupCol = pick.GetComponent<Collider>();
-            if (!pickupsInRange.Contains(pickupCol))
-            {
-                pickups.Remove(pick);
-            }
-        }*/
-
-        pickupCols = Physics.OverlapSphere(transform.position + Vector3.up, reachRadius, pickupMask, QueryTriggerInteraction.Collide);
+        ///PHYSICS.OVERLAPSPHERE METHOD
+        /*pickupCols = Physics.OverlapSphere(transform.position + Vector3.up, reachRadius, pickupMask, QueryTriggerInteraction.Collide);
         if(pickupCols.Length > 0)
         {
             pickupToGrab = pickupCols[0].GetComponent<Pickup>();
@@ -70,12 +75,12 @@ public class PickupManager : MonoBehaviour
         else
         {
             pickupToGrab = null;
-        }
+        }*/
     }
 
     private void PlayerInput_DoPickup()
     {
-        /*if (pickups.Count > 0)
+        if (pickups.Count > 0)
         {
             Pickup currPickup = pickups[0];
             switch (currPickup.pickupType)
@@ -96,8 +101,10 @@ public class PickupManager : MonoBehaviour
                     Debug.LogWarning(currPickup.name + " has no type");
                     break;
             }
-        }*/
-        if(pickupToGrab != null)
+        }
+
+        ///PHYSICS.OVERLAPSPHERE METHOD
+        /*if (pickupToGrab != null)
         {
             switch (pickupToGrab.pickupType)
             {
@@ -115,7 +122,7 @@ public class PickupManager : MonoBehaviour
                     Debug.LogWarning(pickupToGrab.name + " has no type");
                     break;
             }
-        }
+        }*/
 
     }
 
