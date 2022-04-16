@@ -54,7 +54,6 @@ public class BlitRenderPassFeature : ScriptableRendererFeature
     public class Settings
     {
         public Material material = null;
-
     }
 
     public Settings settings = new Settings();

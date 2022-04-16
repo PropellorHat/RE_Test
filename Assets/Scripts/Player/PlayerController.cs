@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
+        
         playerInput.OnAimToggle += PlayerInput_AimToggle;
         playerInput.OnWalk += PlayerInput_SetDestination;
         playerInput.OnAimDown += PlayerInput_OnAimDown;
